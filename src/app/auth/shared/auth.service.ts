@@ -8,14 +8,11 @@ export class AuthService {
 
     constructor(private http: HttpClient) { }
 
+    register( userData: any ): Observable<any>  {
+        return this.http.post('/api/v1/users/register', userData)
+    }
 
-    // getProducts(): Observable<any> {
-    //     // proxy.conf.json
-    //     // return this.http.get('http://localhost:3001/api/v1/products')
-    //     return this.http.get('/api/v1/products')
-    // }
-
-    // getProductById( productId: string ): Observable<any>  {
-    //     return this.http.get('/api/v1/products/' + productId)
-    // }
+    login( userData: any ): Observable<any>  {
+        return this.http.post('/api/v1/users/login', userData)
+    }
 }
