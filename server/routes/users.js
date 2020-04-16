@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const User = require('../model/user')
 const jwt = require('jsonwebtoken')
-const config = require('../config/dev')
+const config = require('../config/index')
 
 router.post('/login', function(req, res) {
     const {email, password} = req.body
