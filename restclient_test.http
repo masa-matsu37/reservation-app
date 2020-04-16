@@ -1,0 +1,26 @@
+
+###
+http://localhost:3001/api/v1/products/
+
+###
+http://localhost:3001/api/v1/products/5e90227d4d71882ac07a8cab
+
+###
+POST http://localhost:3001/api/v1/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "テスト　太郎",
+	"email": "test@test.com",
+	"password": "testtest",
+	"confirmPassword": "testtest"
+}
+
+###
+POST http://localhost:3001/api/v1/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+	"email": "test@test.com",
+	"password": "testtest"
+}
