@@ -21,6 +21,11 @@ POST http://localhost:3001/api/v1/users/login HTTP/1.1
 Content-Type: application/json
 
 {
-	"email": "test@test.com",
-	"password": "testtest"
+	"email": "test1@test.com",
+	"password": "test1"
 }
+
+# ###
+# http://localhost:3001/api/v1/products/sercert
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTk4MDhiMjA2ZTIxMDA1N2NjMzFjOTEiLCJ1c2VybmFtZSI6IuODhuOCueODiO-8kSIsImlhdCI6MTU4NzEwNzIyMywiZXhwIjoxNTg3MTEwODIzfQ.q55vXP3tz2Yws-x41meDc3BL3XXD7wcRHmary8b1Rc4
+
