@@ -1,0 +1,23 @@
+FROM centos:7
+ENV APP_ROOT /app
+
+WORKDIR $APP_ROOT
+
+COPY ./package.json $APP_ROOT
+COPY ./package-lock.json $APP_ROOT
+
+RUN yum install -y epel-release && \
+    yum install -y nodejs npm && \
+    npm install -g n && \
+    n 10.19.0 && \
+    export PATH=$PATH:/usr/local/bin/node && \
+    yum remove -y nodejs npm && \
+    npm install -g @angular/cli && \
+    yum -y install https://centos7.iuscommunity.org/ius-release.rpm && \
+    yum -y install git2u yum-utils && \
+    yum-config-manager --disable ius && \
+    npm install
+
+# COPY . $APP_ROOT
+
+# EXPOSE 4200

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app1:
+    # build: .devcontainer
+    build: 
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    working_dir: /app
+    command: sleep infinity
+    # privileged: true
+    ports:
+      - 4200:4200 # angular
+      - 3001:3001 # node
+    volumes:
+      - ..:/app
+      - /app/node_modules # 消失対策
