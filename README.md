@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## memo 1
+
+ - Nodejs 10.19.0
+ - Angular 9.1.0
+ - MongoDB Atlas (https://www.mongodb.com/cloud/atlas)
+
+ - Express (web application framework)
+ - Bootstrap (front-end web application framework)
+   - creative-tim (https://www.creative-tim.com/product/paper-kit-2-angular) free 
+   - Font Awesome
+ - Mongoose (mongoDB Library)
+ - body-parser (body parsing middleware) Not Used > express.json()
+ - bcrypt (hash passwords Library)
+ - jsonwebtoken (JSON Web Tokens)
+
+ - Encryption Key Generator (256-bit key generator)
+ 
+## memo 2
+
+Remote-Container 作業の場合
+ - Docker Desktop for Windows
+ - VSCODE + Remote Development
+ - git clone 時に「 -c core.autocrlf=false 」を追加
+ - ディレクトリに空フォルダ「node_modules」を作成してから、フォルダで開く(Reopen in Container)
