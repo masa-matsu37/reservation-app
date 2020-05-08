@@ -40,6 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - body-parser (body parsing middleware) Not Used > express.json()
  - bcrypt (hash passwords Library)
  - jsonwebtoken (JSON Web Tokens)
+ - angular-jwt
 
  - Encryption Key Generator (256-bit key generator)
  
