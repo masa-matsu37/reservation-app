@@ -41,6 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - bcrypt (hash passwords Library)
  - jsonwebtoken (JSON Web Tokens)
  - angular-jwt
+ - moment
 
  - Encryption Key Generator (256-bit key generator)
  
