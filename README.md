@@ -51,4 +51,4 @@ Remote-Container 作業の場合
  - Docker Desktop for Windows
  - VSCODE + Remote Development
  - git clone 時に「 -c core.autocrlf=false 」を追加
- - ディレクトリに空フォルダ「node_modules」を作成してから、フォルダで開く(Reopen in Container)
+ - フォルダで開く(Reopen in Container)
